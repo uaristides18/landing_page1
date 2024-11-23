@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/> 
+</head>
+<body>   
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll">Inicio</a></li>
+                <li><a href="#services" class="scroll">Servicios</a></li>
+                <li><a href="#contact" class="scroll">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="bg-color1">
+        <h1>Bienvenido a Mi Landing Page</h1>
+        <p>Esta es una página de ejemplo para mostrar mis habilidades en desarrollo web.</p>
+        <a href="#contact" class="button">Contáctame</a>
+    </section>
+    
+    <section id="services" class="bg-color2">
+        <h2>Servicios</h2>
+        <div class="service">
+            <h3>Desarrollo Web</h3>
+            <p>Creación de sitios web modernos y responsivos.</p>
+        </div>
+        <div class="service">
+            <h3>Desarrollo de Aplicaciones</h3>
+            <p>Desarrollo de aplicaciones móviles y de escritorio.</p>
+        </div>
+        <div class="service">
+            <h3>Integración de IA</h3>
+            <p>Implementación de soluciones de inteligencia artificial.</p>
+        </div>
+    </section>
+    
+    <section id="parallax" class="parallax">
+        <h2>Desplazamiento Parallax</h2>
+    </section>
+    
+    <section id="carousel" class="bg-color1">
+        <h2>Carrusel de Imágenes</h2>
+        <div class="carousel-container">
+            <div><img src="images/image1.jpg" alt="Imagen 1"></div>
+            <div><img src="images/image2.jpg" alt="Imagen 2"></div>
+            <div><img src="images/image3.jpg" alt="Imagen 3"></div>
+        </div>
+    </section>  
+     
+    <section id="testimonials" class="bg-color2">
+        <h2>Testimonios</h2>
+        <div class="testimonial">
+            <p>"El mejor desarrollador con el que he trabajado. Altamente recomendado."</p>
+            <p>- Cliente Satisfecho</p>
+        </div>
+        <div class="testimonial">
+            <p>"Increíble atención al detalle y habilidades técnicas excepcionales."</p>
+            <p>- Otro Cliente Satisfecho</p>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-color1">
+        <h2>Contacto</h2>
+        <form action="http://localhost:3000/contacto" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 [Aristides Roberto Usain]. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts para Voiceflow -->
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '673e6ce93126bfc129781f78' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+    
+    <!-- jQuery y Slick.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <!-- Script de inicialización -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
